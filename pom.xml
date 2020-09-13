@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-rest-security</artifactId>
+    <artifactId>trabajo-practico</artifactId>
     <packaging>jar</packaging>
     <name>Spring Boot REST API Example</name>
     <version>1.0</version>
@@ -107,7 +107,7 @@
                 <version>3.0.3</version>
                 <configuration>
                     <processTypes>
-                        <web>java $JAVA_OPTS -cp target/classes:target/dependency/* StartBookApplication</web>
+                        <web>java $JAVA_OPTS -Dserver.port=$PORT -cp target/classes:target/dependency/* com.cloud.StartBookApplication</web>
                     </processTypes>
                 </configuration>
             </plugin>

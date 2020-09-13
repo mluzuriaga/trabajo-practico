@@ -24,6 +24,10 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 
         http
                 //HTTP Basic authentication
+                .requiresChannel()
+                .requestMatchers(r -> r.getHeader("X-Forwarded-Proto") != null)
+                .requiresSecure()
+                .and()
                 .httpBasic()
                 .and()
                 .authorizeRequests()
