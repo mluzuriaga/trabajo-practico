@@ -49,7 +49,7 @@ public class BookControllerRestTemplateTest {
         String expected = "{id:1,name:\"A Guide to the Bodhisattva Way of Life\",author:\"Santideva\",price:15.41}";
 
         ResponseEntity<String> response = restTemplate
-                .withBasicAuth("user", "user")
+                .withBasicAuth("user", "H6wPC7zaxUkPu8hG")
                 .getForEntity("/books/1", String.class);
 
         printJSON(response);
