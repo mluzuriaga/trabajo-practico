@@ -15,7 +15,7 @@ import java.util.List;
 @RequestMapping("/authors")
 public class AuthorController {
 
-    List<String> authors = Arrays.asList("Santideva", "Marie Kondo", "Martin Fowler", "mkyong");
+    List<String> authors = Arrays.asList("Richard Bejtlich", "Antonio Salas", "Mónica Valle", "Nassim Nicholas Taleb");
 
     @GetMapping
     List<String> findAll() {
